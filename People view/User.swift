@@ -14,5 +14,5 @@ struct User: Identifiable, Codable{
     var age: Int
     var company: String
     var email: String
-    
+    var isActive: Bool
 }

@@ -7,20 +7,21 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+    
+    @State var users: [User] = []
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+     Text("Hello world")
+            .onAppear{
+                apiCall().getUsers { (users) in
+                    self.users = users
+                    
+                }
+            }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+

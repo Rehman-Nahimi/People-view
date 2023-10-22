@@ -11,6 +11,8 @@
 		E091BF4F2AE56C4200B3F793 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BF4E2AE56C4200B3F793 /* ContentView.swift */; };
 		E091BF512AE56C4700B3F793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E091BF502AE56C4700B3F793 /* Assets.xcassets */; };
 		E091BF542AE56C4700B3F793 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E091BF532AE56C4700B3F793 /* Preview Assets.xcassets */; };
+		E091BF5B2AE56CAE00B3F793 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BF5A2AE56CAE00B3F793 /* User.swift */; };
+		E091BF5D2AE56E0400B3F793 /* api call.swift in Sources */ = {isa = PBXBuildFile; fileRef = E091BF5C2AE56E0400B3F793 /* api call.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E091BF4E2AE56C4200B3F793 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E091BF502AE56C4700B3F793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E091BF532AE56C4700B3F793 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E091BF5A2AE56CAE00B3F793 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E091BF5C2AE56E0400B3F793 /* api call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "api call.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				E091BF4C2AE56C4200B3F793 /* People_viewApp.swift */,
 				E091BF4E2AE56C4200B3F793 /* ContentView.swift */,
+				E091BF5A2AE56CAE00B3F793 /* User.swift */,
+				E091BF5C2AE56E0400B3F793 /* api call.swift */,
 				E091BF502AE56C4700B3F793 /* Assets.xcassets */,
 				E091BF522AE56C4700B3F793 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				E091BF4F2AE56C4200B3F793 /* ContentView.swift in Sources */,
 				E091BF4D2AE56C4200B3F793 /* People_viewApp.swift in Sources */,
+				E091BF5B2AE56CAE00B3F793 /* User.swift in Sources */,
+				E091BF5D2AE56E0400B3F793 /* api call.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

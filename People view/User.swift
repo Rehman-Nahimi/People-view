@@ -13,4 +13,6 @@ struct User: Identifiable, Codable{
     var name: String
     var age: Int
     var company: String
+    var email: String
+    
 }

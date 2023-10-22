@@ -14,7 +14,11 @@ struct ContentView: View {
     @State var users: [User] = []
     
     var body: some View {
-     Text("Hello world")
+        List(users) { user in
+            Text(user.name)
+            
+            
+        }
             .onAppear{
                 apiCall().getUsers { (users) in
                     self.users = users

@@ -16,8 +16,6 @@ struct ContentView: View {
     var body: some View {
         List(users) { user in
             Text(user.name)
-            
-            
         }
             .onAppear{
                 apiCall().getUsers { (users) in

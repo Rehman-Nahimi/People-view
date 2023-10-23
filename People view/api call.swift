@@ -14,7 +14,7 @@ class apiCall {
         guard let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json") else { return }
         URLSession.shared.dataTask(with: url) { (data, _, _) in
                 let users = try! JSONDecoder().decode([User].self, from: data!)
-                print(users)
+                
             
                 DispatchQueue.main.async {
                     completion(users)

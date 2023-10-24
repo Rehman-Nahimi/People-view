@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+
+struct Friends: Identifiable, Codable {
+    
+}

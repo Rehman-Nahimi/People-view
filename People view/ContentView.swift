@@ -14,8 +14,26 @@ struct ContentView: View {
     @State var users: [User] = []
     
     var body: some View {
-        List(users) { user in
-            Text(user.name)
+        NavigationView{
+            ScrollView{
+                LazyVStack{
+                    ForEach(users) { user in
+                        NavigationLink {
+                            Detail_View()
+                        } label: {
+                            VStack{
+                                Text(user.name)
+                                HStack{
+                                    Text(user.company)
+                                    Text(user.address)
+                                    Text(String(user.age))
+                                }
+                            }
+                            .padding()
+                        }
+                    }
+                }
+            }
         }
             .onAppear{
                 apiCall().getUsers { (users) in

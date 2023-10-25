@@ -8,6 +8,6 @@
 import Foundation
 
 
-struct Friends: Identifiable, Codable {
+//struct Friends: Identifiable, Codable {
     
-}
+//}

@@ -12,7 +12,7 @@ struct Detail_View: View {
     @State var users: [User] = []
     
     var body: some View {
-        NavigationView(users){ user in
+        NavigationView{
         
             
         }

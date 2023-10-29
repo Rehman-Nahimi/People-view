@@ -36,10 +36,11 @@ struct ContentView: View {
             }
         }
             .onAppear{
-                apiCall().getUsers { (users) in
-                    self.users = users
-                    
-                }
+                self.users = await ApiService().getUser2()
+//                apiCall().getUsers { (users) in
+//                    self.users = users
+//
+//                }
             }
     }
 }

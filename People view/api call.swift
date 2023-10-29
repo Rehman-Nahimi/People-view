@@ -27,7 +27,7 @@ class apiCall {
 
 class ApiService {
     
-    func getUser2() async throws -> User{
+    func getUser2() async throws -> [User]{
         let endpoint = "https://www.hackingwithswift.com/samples/friendface.json"
         
         guard let url = URL(string: endpoint) else { throw TSError.invalidURL}
@@ -40,7 +40,7 @@ class ApiService {
         do {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            return try decoder.decode(User.self, from: data)
+            return try decoder.decode([User].self, from: data)
         } catch {
             throw TSError.invalidData
         }

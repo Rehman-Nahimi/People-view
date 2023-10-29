@@ -9,19 +9,14 @@ import SwiftUI
 
 struct Detail_View: View {
     
-    @State var users: [User] = []
+    var user: User
     
     var body: some View {
         NavigationView{
-        
+            Text(user.name)
             
         }
-        .onAppear{
-            apiCall().getUsers { (users) in
-                self.users = users
-                
-            }
-        }
+        
     }
 }
 

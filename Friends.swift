@@ -8,6 +8,9 @@
 import Foundation
 
 
-//struct Friends: Identifiable, Codable {
+struct Friend: Identifiable, Codable {
     
-//}
+    var id: String
+    var name: String
+    
+}

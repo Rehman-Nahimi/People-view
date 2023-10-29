@@ -52,11 +52,7 @@ struct ContentView: View {
 //            }
     }
 }
-struct ContentView_preiview: PreviewProvider {
-    static var previews: some View {
-        ContentView(users:[User.init(name: "John", age: 5, company: "Apple", email: "John@apple.com", isActive: true, address: "1 way drive", about: "hi")])
-    }
-}
+
 
 
 

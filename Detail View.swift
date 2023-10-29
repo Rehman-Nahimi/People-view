@@ -13,7 +13,13 @@ struct Detail_View: View {
     
     var body: some View {
         NavigationView{
-            Text(user.name)
+            
+            VStack{
+                Text(user.name)
+                ForEach (user.friends) { friend in
+                    Text(friend.name)
+                }
+            }
             
         }
         

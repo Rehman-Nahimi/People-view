@@ -17,4 +17,6 @@ struct User: Identifiable, Codable{
     var isActive: Bool
     var address: String
     var about: String
+    
+    var friends: [Friend]
 }

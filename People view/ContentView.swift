@@ -35,13 +35,21 @@ struct ContentView: View {
                 }
             }
         }
-            .onAppear{
-                self.users = await ApiService().getUser2()
-//                apiCall().getUsers { (users) in
-//                    self.users = users
-//
-//                }
+        .task {
+            do{
+                users = try await ApiService().getUser2()
+            } catch {
+                print(error.localizedDescription)
             }
+        }
+//            .onAppear{
+//                self.users = try! await ApiService().getUser2()
+//
+////                apiCall().getUsers { (users) in
+////                    self.users = users
+////
+////                }
+//            }
     }
 }
 

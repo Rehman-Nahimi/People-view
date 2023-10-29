@@ -25,3 +25,30 @@ class apiCall {
         
     }
 
+class apiCall2 {
+    
+    func getuser2() async throws -> User{
+        let endpoint = "https://www.hackingwithswift.com/samples/friendface.json"
+        
+        guard let url = URL(string: endpoint) else { throw tsError.invalidURL}
+        
+        let(data, response) = try await URLSession.shared.data(from: url )
+        
+        guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
+            throw tsError.invalidResponse
+        }
+        do {
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
+            return try decoder.decode(User.self, from: data)
+        } catch {
+            throw tsError.invalidData
+        }
+    }
+    
+    enum tsError: Error{
+        case invalidURL
+        case invalidResponse
+        case invalidData
+    }
+}

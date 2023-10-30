@@ -32,6 +32,7 @@ struct ContentView: View {
                             }
                             .padding()
                             .background(RoundedRectangle(cornerRadius: 25).fill(Color.yellow))
+                            .frame(width: 600, height: 80)
                             
                         }
                     }

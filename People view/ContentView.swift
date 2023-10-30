@@ -23,9 +23,10 @@ struct ContentView: View {
                         } label: {
                             VStack{
                                 Text(user.name)
+                                    .font(.title)
+                                    .bold()
                                 HStack{
                                     Text(user.company)
-                                    Text(user.address)
                                     Text(String(user.age))
                                 }
                             }

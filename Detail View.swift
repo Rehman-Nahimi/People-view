@@ -18,9 +18,11 @@ struct Detail_View: View {
                 Text(user.name)
                     .font(.title)
                 Text(user.company)
-                Text("Adress\(user.address)")
-                Text("Age:\(user.age)")
+                Text("Adress: \(user.address)")
+                Text("Age: \(user.age)")
+                Text(user.about)
                 Text("Friends include:")
+                    .bold()
                 ForEach (user.friends) { friend in
                     Text(friend.name)
                 }

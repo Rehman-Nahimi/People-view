@@ -16,6 +16,11 @@ struct Detail_View: View {
             
             VStack{
                 Text(user.name)
+                    .font(.title)
+                Text(user.company)
+                Text("Adress\(user.address)")
+                Text("Age:\(user.age)")
+                Text("Friends include:")
                 ForEach (user.friends) { friend in
                     Text(friend.name)
                 }
